@@ -1,0 +1,55 @@
+@import 'reset';
+@import 'variable';
+@import 'mixins';
+
+html{
+    font-size: 10px;
+}
+
+.header{
+
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+    flex-direction: column;
+
+    @include screen-min-sm{
+        background-color: lightcoral;
+    }
+
+    @include screen-min-md{
+        background-color: lightblue;
+    }
+
+    @include screen-min-lg{
+        background-color: lightyellow;
+    }
+
+    @include screen-min-xl{
+        background-color: lightslategrey;
+    }
+}
+
+.footer{
+
+}
+
+.title{
+    color: black;
+    font-size: 3.6rem;
+    font-family: $roboto;
+    margin-bottom: 10px;
+    
+}
+
+.description{
+    color: black;
+    font-size: 2.4rem;
+    font-family: $roboto;
+}
